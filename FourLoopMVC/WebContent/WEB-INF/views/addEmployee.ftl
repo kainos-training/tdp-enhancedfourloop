@@ -41,51 +41,57 @@
 			<hr />
 
 			<h5>Enter employee details:</h5>
-			<form method="post" data-abide>
+			<form action="insertEmployee.mvc" method="post" data-abide>
+
 				<div class="row">
 
 					<div class="large-6 columns">
 						<div class="input-wrapper">
 							<label for="fname">First Name</label>
-							<input id="fname" required type="text" placeholder="eg John" />
+							<input id="fname" name="firstname" required type="text" placeholder="eg John" />
 						</div>
+
 					</div>
 					<div class="large-6 columns">
 					<div class="input-wrapper">
 						<label>Last Name</label>
-						<input required type="text" placeholder="eg Smith" />
+						<input required type="text" name="lastname" placeholder="eg Smith" />
 					</div>
+
 					</div>
 				</div>
 
 				<div class="large-4 medium-4 columns">
 					<label>Address</label>
-					<input required type="text" placeholder="line one" />
-					<input  type="text" placeholder="line two" />
-					<input required type="text" placeholder="city" />
-					<input required type="text" placeholder="postcode" />
+
+					<input required name="line1" type="text" placeholder="line one" />
+					<input name="line2" type="text" placeholder="line two" />
+					<input required name="city" type="text" placeholder="city" />
+					<input required name="postcode" type="text" placeholder="postcode" />
 
 				</div>
 				<div class="large-4 medium-4 columns">
 					<label>National Insurance Number</label>
-					<input required type="text" placeholder="eg PP343434R" />
+
+					<input required name="ninum" type="text" placeholder="eg PP343434R" />
 					<label>Bank account IBAN/BIC</label>
-					<input required type="text" placeholder="" />
+					<input required name="bankacc" type="text" placeholder="" />
 					<label>Starting salary</label>
-					<input required type="text" placeholder="eg 300000" />
+					<input required name="salary" type="text" placeholder="eg 300000" />
 					
 
 				</div>
 				<div class="large-4 medium-4 columns">
+
 					<label>Employee Type</label>
-					<select>
+					<select name=employeeType>
 						<option value="standard employee">standard employee</option>
 						<option value="sales employee">sales employee</option>
 					</select>
 				</div>
 				<div class="large-4 medium-4 columns">
 					<label>Department</label>
-					<select>
+					<select name="department">
 						<option value="Evolve">Evolve</option>
 						<option value="Gov">Gov</option>
 						<option value="Enterprise">Enterprise</option>
