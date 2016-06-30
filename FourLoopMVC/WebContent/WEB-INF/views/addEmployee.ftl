@@ -10,17 +10,39 @@
 </head>
 
 <body>
-	<div class="row">
-		<div class="large-12 columns">
-			<h1>fourloop.com</h1>
+	<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+		<button class="menu-icon" type="button" data-toggle></button>
+		<div class="title-bar-title">Menu</div>
+	</div>
+
+	<div class="top-bar" id="main-menu">
+		<div class="top-bar-left">
+			<ul class="dropdown menu" data-dropdown-menu>
+				<li class="menu-text">enchanced&#8984</li>
+			</ul>
+		</div>
+		<div class="top-bar-right">
+			<ul class="menu" data-responsive-menu="drilldown medium-dropdown">
+				<li class="has-submenu">
+					<a href="#">Human Resources</a>
+					<ul class="submenu menu vertical" data-submenu>
+						<li><a href="#">Add New Employee</a></li>
+						<li><a href="#">Employees per Dept.</a></li>
+						<li><a href="#">Add Sales Employee</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Placeholder One</a></li>
+				<li><a href="#">Placeholder Two</a></li>
+			</ul>
 		</div>
 	</div>
+
 	<div class="row">
 		<div class="large-12 medium-12 columns">
 			<hr />
 
 			<h5>Add an employee:</h5>
-			<form>
+			<form method="post">
 				<div class="row">
 					<div class="large-6 columns">
 						<label>First Name</label>
