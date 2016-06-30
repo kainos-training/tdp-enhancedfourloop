@@ -52,7 +52,7 @@
 				</div>
 				<div class="large-4 medium-4 columns">
 					<label>Employee Number</label>
-					<input "employeenum" type="text" placeholder="eg K555555" />
+					<input name="employeenum" type="text" placeholder="eg K555555" />
 				</div>
 
 				<div class="large-4 medium-4 columns">
