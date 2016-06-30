@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+p {
+	color: GREEN;
+}
+
+h1 {
+	color: GREEN;
+}
+
+li {
+	background-color: grey;
+	display: block;
+	list-style-type: none;
+}
+
+table {
+	margin: 0 auto;
+}
+
+td {
+	background-color: grey;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
