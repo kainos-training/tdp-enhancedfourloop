@@ -7,6 +7,7 @@
 	<title>Foundation for Sites</title>
 	<link rel="stylesheet" href="/FourLoopMVC/css/foundation.css">
 	<link rel="stylesheet" href="/FourLoopMVC/css/app.css">
+	<script src="/FourLoopMVC/js/vendor/modernizr.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,13 @@
 						<li><a href="#">Employees per Dept.</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Placeholder One</a></li>
+				<li class="has-submenu">
+					<a href="#">Finance</a>
+					<ul class="submenu menu vertical" data-submenu>
+						<li><a href="#">Add New Employee</a></li>
+						<li><a href="#">Employees per Dept.</a></li>
+					</ul>
+				</li>
 				<li><a href="#">Placeholder Two</a></li>
 			</ul>
 		</div>
@@ -65,7 +72,7 @@
 					<label>Address</label>
 
 					<input required name="line1" type="text" placeholder="line one" />
-					<input name="line2" type="text" placeholder="line two" />
+					<input required name="line2" type="text" placeholder="line two" />
 					<input required name="city" type="text" placeholder="city" />
 					<input required name="postcode" type="text" placeholder="postcode" />
 
@@ -84,20 +91,29 @@
 				<div class="large-4 medium-4 columns">
 
 					<label>Employee Type</label>
-					<select name=employeeType>
+					<select id="employeeType" name="employeeType">
 						<option value="standard employee">standard employee</option>
 						<option value="sales employee">sales employee</option>
 					</select>
 				</div>
 				<div class="large-4 medium-4 columns">
 					<label>Department</label>
-					<select name="department">
+					<select id="department" name="department">
 						<option value="Evolve">Evolve</option>
 						<option value="Gov">Gov</option>
 						<option value="Enterprise">Enterprise</option>
 						<option value="SMART">SMART</option>
 						<option value="Corporate">Corporate</option>
 					</select>
+				</div>
+
+				<div id="rate" hidden class="large-2 medium-2 columns">
+					<label>Commission Rate</label>
+					<input required  name="rate" type="text" placeholder="0.2" />
+				</div>
+				<div id="sales" hidden class="large-2 medium-2 columns">
+					<label>Total sales</label>
+					<input required  name="sales" type="text" placeholder="12000" />
 				</div>
 
 				<div class="large-4 medium-4 columns">
@@ -121,9 +137,7 @@
 	<script src="/FourLoopMVC/js/vendor/what-input.js"></script>
 	<script src="/FourLoopMVC/js/vendor/foundation.min.js"></script>
 	<script src="/FourLoopMVC/js/app.js"></script>
-	<script>
-		$(document).foundation();
-	</script>
+	<script src="/FourLoopMVC/js/vendor/fastclick.js"></script>
 
 </body>
 </html>
