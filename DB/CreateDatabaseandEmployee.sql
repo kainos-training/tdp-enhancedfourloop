@@ -15,8 +15,11 @@ Employeelname varchar(35) NOT NULL,
 JobRole varchar(30),
 StartDate Date,
 EndDate Date,
-Address varchar(100),
+AddressOne varchar(50),
+AddressTwo varchar(50),
+City varchar(30),
+Postcode varchar(10),
 NationalInsurance char(9),
-BankAccount varchar(10),
+BankAccount varchar(50),
 Salary decimal(10, 2)
 );
