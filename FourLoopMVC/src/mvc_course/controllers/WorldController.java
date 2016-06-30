@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import mvc_data.IEmployeeMapper;
 import mvc_data.IWorldMapper;
@@ -14,15 +15,29 @@ public class WorldController {
 
 	@Autowired
 	public IEmployeeMapper empMapper;
-
 	
-
-	String name = "Thomas";
+	@RequestMapping("/insert.mvc")
+	public String homepage(Model m) {
+		
+		return "addEmployee";
+		
+	}
 	
 	@RequestMapping("/insertEmployee.mvc")
-	public String employee(Model m) {
+	public String insertEmployee(Model m,
+			@RequestParam("firstname") String firstname,
+			@RequestParam("lastname") String lastname,
+			@RequestParam("line1") String line1,
+			@RequestParam("line2") String line2,
+			@RequestParam("city") String city,
+			@RequestParam("postcode") String postcode,
+			@RequestParam("ninum") String ninum,
+			@RequestParam("bankacc") String bankacc,
+			@RequestParam("salary") String salary,
+			@RequestParam("employeenum") String employeenum
+			) {
 		
-		empMapper.insertEmployees("Paul");
+		empMapper.insertEmployees(firstname);
 		
 		return "employee";
 	}

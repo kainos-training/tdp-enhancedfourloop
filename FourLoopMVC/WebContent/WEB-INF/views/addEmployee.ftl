@@ -20,39 +20,39 @@
 			<hr />
 
 			<h5>Add an employee:</h5>
-			<form>
+			<form action="insertEmployee.mvc" method="post">
 				<div class="row">
 					<div class="large-6 columns">
 						<label>First Name</label>
-						<input type="text" placeholder="eg John" />
+						<input name="firstname" type="text" placeholder="eg John" />
 					</div>
 					<div class="large-6 columns">
 						<label>Last Name</label>
-						<input type="text" placeholder="eg Smith" />
+						<input name="lastname" type="text" placeholder="eg Smith" />
 					</div>
 				</div>
 
 				<div class="large-4 medium-4 columns">
 					<label>Address</label>
-					<input type="text" placeholder="line one" />
-					<input type="text" placeholder="line two" />
-					<input type="text" placeholder="city" />
-					<input type="text" placeholder="postcode" />
+					<input name="line1" type="text" placeholder="line one" />
+					<input name="line2" type="text" placeholder="line two" />
+					<input name="city" type="text" placeholder="city" />
+					<input name="postcode" type="text" placeholder="postcode" />
 
 				</div>
 				<div class="large-4 medium-4 columns">
 					<label>National Insurance Number</label>
-					<input type="text" placeholder="eg PP343434R" />
+					<input name="ninum" type="text" placeholder="eg PP343434R" />
 					<label>Bank account IBAN/BIC</label>
-					<input type="text" placeholder="" />
+					<input name="bankacc" type="text" placeholder="" />
 					<label>Starting salary</label>
-					<input type="text" placeholder="eg 300000" />
+					<input name="salary" type="text" placeholder="eg 300000" />
 					
 
 				</div>
 				<div class="large-4 medium-4 columns">
 					<label>Employee Number</label>
-					<input type="text" placeholder="eg K555555" />
+					<input "employeenum" type="text" placeholder="eg K555555" />
 				</div>
 
 				<div class="large-4 medium-4 columns">
