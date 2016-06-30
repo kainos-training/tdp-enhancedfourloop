@@ -33,11 +33,12 @@ public class WorldController {
 			@RequestParam("postcode") String postcode,
 			@RequestParam("ninum") String ninum,
 			@RequestParam("bankacc") String bankacc,
-			@RequestParam("salary") String salary
+			@RequestParam("salary") String salary,
+			@RequestParam("department") String department
 			) {
 		
 		empMapper.insertEmployees(firstname, lastname, line1, line2, city,
-				postcode, ninum, bankacc, salary);
+				postcode, ninum, bankacc, salary, department);
 		
 		return "employee";
 	}
