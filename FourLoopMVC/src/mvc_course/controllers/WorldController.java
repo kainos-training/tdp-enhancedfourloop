@@ -16,7 +16,7 @@ public class WorldController {
 	@Autowired
 	public IEmployeeMapper empMapper;
 	
-	@RequestMapping("/insert.mvc")
+	@RequestMapping("/setup.mvc")
 	public String homepage(Model m) {
 		
 		return "addEmployee";
