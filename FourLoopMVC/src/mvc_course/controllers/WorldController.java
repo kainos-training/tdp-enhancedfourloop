@@ -41,6 +41,15 @@ public class WorldController {
 		
 		return "employee";
 	}
+	
+	@RequestMapping("/employeeDepartments.mvc")
+	public String departments(Model m, @PathVariable String department) {
+		
+		m.addAttribute("BUReport", empMapper.getEmployeesByDepartment(department));
+		
+		return "BUReport";
+	}
+	
 //	
 //	@RequestMapping("/continentList.mvc")
 //	public String continents(Model m) {
