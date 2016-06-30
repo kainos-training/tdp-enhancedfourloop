@@ -6,6 +6,8 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
+import mvc_course.models.Employee;
+
 public interface IEmployeeMapper {
 
 	@Insert("Insert into Employees(Employeefname, Employeelname, " + "AddressOne, AddressTwo, City, "
@@ -18,8 +20,8 @@ public interface IEmployeeMapper {
 			@Param("salary") String salary);
 	
 	
-	@Select("Select Employeefname, Employeelname, JobRole "
-			+ "From Employees Where Department = #{department}")
-	List<String> getEmployeesByDepartment(@Param("department") String department);
+	@Select("Select Employeefname as fname, Employeelname as lname, JobRole as jobRole "
+			+ "From Employees order by 1")
+	List<Employee> getEmployeesByDepartment();
 
 }

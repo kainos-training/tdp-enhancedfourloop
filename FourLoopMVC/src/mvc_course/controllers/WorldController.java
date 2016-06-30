@@ -43,9 +43,9 @@ public class WorldController {
 	}
 	
 	@RequestMapping("/employeeDepartments.mvc")
-	public String departments(Model m, @PathVariable String department) {
+	public String departments(Model m) {
 		
-		m.addAttribute("BUReport", empMapper.getEmployeesByDepartment("Test"));
+		m.addAttribute("BUReport", empMapper.getEmployeesByDepartment());
 		
 		return "BUReport";
 	}

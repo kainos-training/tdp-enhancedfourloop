@@ -58,9 +58,11 @@
 						</tr>
 					</thead>
 					<tbody>
-						<#list department as departments>
+						<#list BUReport as departments>
 						<tr>
-							<td>${departments}</td>
+							<td>${departments.fname}</td>
+							<td>${departments.lname}</td>
+							<td>${departments.jobRole}</td>
 						</tr>
 						</#list>
 					</tbody>
