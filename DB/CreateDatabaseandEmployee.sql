@@ -25,6 +25,14 @@ Salary decimal(10, 2),
 Department varchar(50)
 );
 
+CREATE TABLE SalesEmployee (
+EmployeeID int,
+CommissionRate decimal(10, 2),
+NumSales int,
+
+FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
+);
+
 /*
 *Add data
 */
