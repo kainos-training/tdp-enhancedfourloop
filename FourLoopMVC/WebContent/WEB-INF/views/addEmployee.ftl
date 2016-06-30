@@ -5,8 +5,8 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Foundation for Sites</title>
-	<link rel="stylesheet" href="css/foundation.css">
-	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="/FourLoopMVC/css/foundation.css">
+	<link rel="stylesheet" href="/FourLoopMVC/css/app.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
 					</div>
 					<div class="large-6 columns">
 						<label>Last Name</label>
-						<input type="text" placeholder="large-12.columns" />
+						<input type="text" placeholder="eg Smith" />
 					</div>
 				</div>
 
@@ -113,9 +113,9 @@
 		</div>
 	</div> -->
 
-	<script src="js/vendor/jquery.js"></script>
-	<script src="js/vendor/what-input.js"></script>
-	<script src="js/vendor/foundation.js"></script>
-	<script src="js/app.js"></script>
+	<script src="/FourLoopMVC/js/vendor/jquery.js"></script>
+	<script src="/FourLoopMVC/js/vendor/what-input.js"></script>
+	<script src="/FourLoopMVC/js/vendor/foundation.js"></script>
+	<script src="/FourLoopMVC/js/app.js"></script>
 </body>
 </html>

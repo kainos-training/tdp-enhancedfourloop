@@ -17,7 +17,7 @@ public class WorldController {
 	@RequestMapping("/continentList.mvc")
 	public String continents(Model m) {
 		m.addAttribute("continents", worldMapper.getContinents());
-		return "continents";
+		return "addEmployee";
 	}
 	
 	
