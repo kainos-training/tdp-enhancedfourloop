@@ -52,6 +52,15 @@ public class WorldController {
 		
 		return "success";
 	}
+	
+	@RequestMapping("/employeeDepartments.mvc")
+	public String departments(Model m) {
+		
+		m.addAttribute("BUReport", empMapper.getEmployeesByDepartment());
+		
+		return "BUReport";
+	}
+	
 //	
 //	@RequestMapping("/continentList.mvc")
 //	public String continents(Model m) {

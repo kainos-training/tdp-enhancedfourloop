@@ -6,12 +6,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Countries in ${region}</h1>
+<h1>Countries in</h1>
 <table border=1>
 <tr><th>Country</th><th>Region</th><th>Continent</th></tr>
 <#list countries as country>
 <tr>
-<td>${country.name}</td><td>${country.region}</td><td>${country.continent}</td>
+<td>${country.fname}</td><td>${country.lname}</td><td>${country.jobRole}</td>
 </tr>
 </#list>
 </table>
