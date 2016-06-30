@@ -17,9 +17,9 @@ public interface IEmployeeMapper {
 	void insertEmployees(@Param("firstname") String firstname, @Param("lastname") String lastname,
 			@Param("line1") String line1, @Param("line2") String line2, @Param("city") String city,
 			@Param("postcode") String postcode, @Param("ninum") String ninum, @Param("bankacc") String bankacc,
-			@Param("salary") String salary, @Param("department") String department););
+			@Param("salary") String salary, @Param("department") String department);
 	
-	@Select("Select Employeefname as fname, Employeelname as lname, JobRole as jobRole "
+	@Select("Select Employeefname as fname, Employeelname as lname "
 			+ "From Employees order by 1")
 	List<Employee> getEmployeesByDepartment();
 

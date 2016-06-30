@@ -54,7 +54,7 @@
 						<tr>
 							<th width="200">First Name</th>
 							<th width="200">Last Name</th>
-							<th width="150">Role</th>
+	
 						</tr>
 					</thead>
 					<tbody>
@@ -62,7 +62,7 @@
 						<tr>
 							<td>${departments.fname}</td>
 							<td>${departments.lname}</td>
-							<td>${departments.jobRole}</td>
+			
 						</tr>
 						</#list>
 					</tbody>

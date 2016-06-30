@@ -28,7 +28,7 @@
 					<a href="#">Human Resources</a>
 					<ul class="submenu menu vertical" data-submenu>
 						<li><a href="#">Add New Employee</a></li>
-						<li><a href="#">Employees per Dept.</a></li>
+						<li><a href="/FourLoopMVC/employeeDepartments.mvc">Employees per Dept.</a></li>
 					</ul>
 				</li>
 				<li class="has-submenu">
