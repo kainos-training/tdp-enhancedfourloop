@@ -14,4 +14,8 @@ public interface IEmployeeMapper {
 			@Param("postcode") String postcode, @Param("ninum") String ninum, @Param("bankacc") String bankacc,
 			@Param("salary") String salary, @Param("department") String department);
 
+	@Insert("Insert into SalesEmployee(EmployeeID, CommissionRate, NunSales) "
+			+ "values(#{employeeid}, ${commrate}, ${numsales})")
+	void insertSalesEmployee(@Param("employeeid") String employeeid,
+			@Param("commrate") String commrate, @Param("numsales") String numsales);
 }
