@@ -1,1 +1,6 @@
 FourLoopMVC/target/classes
+pom.xml
+FourLoopMVC/target/
+FourLoopMVC/.metadata/
+FourLoopMVC/RemoteSystemsTempFiles/
+FourLoopMVC/Servers/
