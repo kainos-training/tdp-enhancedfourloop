@@ -36,7 +36,7 @@
 			value="jdbc:mysql://localhost/FourLoopCompany">
 		</property>
 		<property name="username" value="root"></property>
-		<property name="password" value="MyNewPassword"></property>
+		<property name="password" value="ch@ngeme1"></property>
 	</bean>
 	<bean id="sqlSessionFactory"
 		class="org.mybatis.spring.SqlSessionFactoryBean">

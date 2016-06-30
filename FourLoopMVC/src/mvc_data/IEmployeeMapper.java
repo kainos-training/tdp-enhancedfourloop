@@ -26,4 +26,8 @@ public interface IEmployeeMapper {
 			
 
 
+	@Insert("Insert into SalesEmployee(EmployeeID, CommissionRate, NunSales) "
+			+ "values(#{employeeid}, ${commrate}, ${numsales})")
+	void insertSalesEmployee(@Param("employeeid") String employeeid,
+			@Param("commrate") String commrate, @Param("numsales") String numsales);
 }

@@ -40,7 +40,17 @@ public class WorldController {
 		empMapper.insertEmployees(firstname, lastname, line1, line2, city,
 				postcode, ninum, bankacc, salary, department);
 		
-		return "employee";
+		return "success";
+	}
+	
+	@RequestMapping("/insertSalesEmployee.mvc")
+	public String insertSalesEmployee(Model m,
+			@RequestParam("employeenum") String employeenum,
+			@RequestParam("commrate") String commrate,
+			@RequestParam("numsales") String numsales) {
+		empMapper.insertSalesEmployee(numsales, commrate, numsales);
+		
+		return "success";
 	}
 	
 	@RequestMapping("/employeeDepartments.mvc")
