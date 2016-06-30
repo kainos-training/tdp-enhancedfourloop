@@ -8,9 +8,9 @@
 <h1>Continents</h1>
 <table border=1>
 <tr><th>Continent</th></tr>
-<#list continents as continent>
+<#list BUReport as continent>
 <tr>
-<td><a href='${rc.contextPath}/${continent}/regions.mvc'>${continent}</a></td>
+<td>${continent}</a></td>
 </tr>
 </#list>
 </table>
