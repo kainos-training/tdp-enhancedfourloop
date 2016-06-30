@@ -32,7 +32,7 @@
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver">
 		</property>
-		<property name="url" value="jdbc:mysql://localhost/world"></property>
+		<property name="url" value="jdbc:mysql://localhost/Employee"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="MyNewPassword"></property>
 	</bean>
@@ -54,4 +54,11 @@
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
 	</bean>
 	
+	<bean id="employeeMapper"
+		class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface"
+			value="mvc_data.IEmployeeMapper">
+		</property>
+		<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+	</bean>
 </beans>
