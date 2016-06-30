@@ -21,7 +21,8 @@ City varchar(30),
 Postcode varchar(10),
 NationalInsurance char(9),
 BankAccount varchar(50),
-Salary decimal(10, 2)
+Salary decimal(10, 2),
+Department varchar(50)
 );
 
 /*
@@ -30,8 +31,8 @@ Salary decimal(10, 2)
 
 Use FourLoopCompany;
 
-Insert into Employees (Employeefname, Employeelname,JobRole,StartDate,AddressOne,NationalInsurance,BankAccount,Salary)
-values ('Adam','Ant','Software Engineer','2014-01-01','133 Belfast Street','AB123456C','111111 2222222','50000');
+Insert into Employees (Employeefname, Employeelname,JobRole,StartDate,AddressOne,NationalInsurance,BankAccount,Salary,Department)
+values ('Adam','Ant','Software Engineer','2014-01-01','133 Belfast Street','AB123456C','111111 2222222','50000','Evolve');
 
 
 
